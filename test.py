@@ -10,23 +10,23 @@ class Test(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
 
-    # def test_a_resetpencarian(self):
-    #     driver=self.driver
-    #     driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
-    #     driver.maximize_window()
-    #     time.sleep(2)
-    #     driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input').send_keys("Admin") #mencari elemet email
-    #     time.sleep(2)
-    #     driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input').send_keys("admin123")
-    #     time.sleep(2)
-    #     driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button').click()
-    #     time.sleep(2)
-    #     driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers")
-    #     time.sleep(2)
-    #     driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/input').send_keys("Anthony.Nolan")
-    #     time.sleep(5)
-    #     driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[2]/button[1]').click()
-    #     time.sleep(6)        
+    def test_a_resetpencarian(self):
+        driver=self.driver
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+        driver.maximize_window()
+        time.sleep(2)
+        driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input').send_keys("Admin") #mencari elemet email
+        time.sleep(2)
+        driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input').send_keys("admin123")
+        time.sleep(2)
+        driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button').click()
+        time.sleep(2)
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers")
+        time.sleep(2)
+        driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/input').send_keys("Anthony.Nolan")
+        time.sleep(5)
+        driver.find_element(By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[2]/button[1]').click()
+        time.sleep(6)        
 
         
     def test_b_tambahemployee(self):
